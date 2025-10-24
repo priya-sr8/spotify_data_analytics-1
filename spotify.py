@@ -6,12 +6,12 @@ import re
 
 # Set up Client Credentials
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
-    client_id='7ae955693f224b679fc0abaad6996b13',  # Replace with your Client ID
-    client_secret='a4b9348c27754ccb92abe396752c15c4'  # Replace with your Client Secret
+    client_id='2e33f7630f3747209f91c280a2ebef12',  # Replace with your Client ID
+    client_secret='a392f697abf0498d88017f92f08adeb7'  # Replace with your Client Secret
 ))
 
 # Full track URL (example: Shape of You by Ed Sheeran)
-track_url = "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp"
+track_url = "https://open.spotify.com/track/2t1pEpxPz91KldW7C0FyZv"
 
 # Extract track ID directly from URL using regex
 track_id = re.search(r'track/([a-zA-Z0-9]+)', track_url).group(1)
